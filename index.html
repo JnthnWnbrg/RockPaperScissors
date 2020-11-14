@@ -1,1 +1,23 @@
-I choose rock
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width user-scalable=yes">
+    <FONT FACE="monospace">
+    <title>Jon RPS</title>
+  </head>
+  <body>
+    <button onclick="choice=0;eval()">Rock</button>
+    <button onclick="choice=1;eval()">Paper</button>
+    <button onclick="choice=2;eval()">Scissors</button>
+    <p id="output"></p>
+    <script>
+      function eval() {
+	  document.getElementById("output").innerHTML="Your Choice "+choice
+	  document.getElementById("output").innerHTML+="</br>"
+	  cpuChoice=Math.floor(Math.random()*3);
+	  document.getElementById("output").innerHTML+="CPU Choice "+cpuChoice
+      }
+    </script>
+  </body>  
+</htmla.
